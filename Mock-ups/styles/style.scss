@@ -1,0 +1,62 @@
+@import "starter";
+@import "grid";
+
+body {
+  color: red;
+}
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+
+// --- Header ---
+
+header {
+  width: 100%;
+  background:#CA0002;
+}
+
+
+// --- Navigation ---
+
+ul.nav, ul.sub-nav {
+  margin:0;
+  padding:0;
+  
+  float:right;
+  position: relative;
+}
+ul.nav li {
+  display:inline;
+}
+  ul.nav li a {
+    padding:10px;
+    float:left;
+  }
+
+ul.nav li ul {
+  position: absolute;
+  top:38px;
+  float:left;
+  background:#DFDFDF;
+  display:none;
+}
+  ul.nav li ul li a {
+    padding:5px 10px;
+    color:black;
+  }
+
+ul.nav li:hover ul {
+  display:block;        
+}
+
+ul.nav li:hover a {
+  background:#dfdfdf;
+  color:black;
+}
+
+span.arrow {
+  font-size:10px;
+}
