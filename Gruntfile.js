@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                    style: 'expanded'
                  },
                  files: {                         // Dictionary of files
-                   'Mock-ups/styles/style.css': 'Mock-ups/styles/style.scss' // 'destination': 'source'
+                   'style.css': 'Mock-ups/styles/style.scss' // 'destination': 'source'
                  }
                }
              },
