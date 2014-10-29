@@ -1,0 +1,53 @@
+$font-size: 1em;
+$guide: 1px dashed red;
+footer {
+	width: 100%;
+	padding: 30px 50px;
+	background: #f7f7f7;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	color: #202020;
+	.footer-container {
+		max-width: 1200px;
+	}
+	.left-column {
+		float: left;
+		width: 55%;
+	}
+	.right-column {
+		float: left;
+		width: 40%;
+	}
+	.footer-nav {
+		width: 100%;
+		font-size: $font-size;
+		// border: $guide;
+		ul, li {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			float: left;
+			list-style-type: none;
+			margin-right: 20px; 
+			font-size: $font-size * 1.5;
+
+		}
+		a {
+			color: #333;
+		}
+	}
+	p {
+		width: 100%;
+		// border: $guide;
+	}
+	img {
+		width: 150px;
+		display: inline-block;
+		position: relative;
+		left: 20px;
+		top: -20px;
+	}
+}
