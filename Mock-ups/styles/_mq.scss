@@ -1,0 +1,11 @@
+@media all and (max-width: 860px) {
+	footer { 
+		.left-column, .right-column {
+			width: 100%;
+		}
+		.right-column {
+			padding-top: 30px;
+			text-align: center;
+		}
+	}
+}

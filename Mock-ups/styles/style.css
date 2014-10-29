@@ -183,6 +183,55 @@ body:after {
   clear: both;
 }
 
+footer {
+  width: 100%;
+  padding: 30px 50px;
+  background: #f7f7f7;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #202020;
+}
+footer .footer-container {
+  max-width: 1200px;
+}
+footer .left-column {
+  float: left;
+  width: 55%;
+}
+footer .right-column {
+  float: left;
+  width: 40%;
+}
+footer .footer-nav {
+  width: 100%;
+  font-size: 1em;
+}
+footer .footer-nav ul, footer .footer-nav li {
+  margin: 0;
+  padding: 0;
+}
+footer .footer-nav li {
+  float: left;
+  list-style-type: none;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+footer .footer-nav a {
+  color: #333;
+}
+footer p {
+  width: 100%;
+}
+footer img {
+  width: 150px;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  top: -20px;
+}
+
 body {
   color: red;
 }
@@ -238,5 +287,3 @@ ul.nav li:hover a {
 span.arrow {
   font-size: 10px;
 }
-
-/*# sourceMappingURL=style.css.map */
