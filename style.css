@@ -187,10 +187,6 @@ footer {
   width: 100%;
   padding: 30px 50px;
   background: #f7f7f7;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   color: #202020;
 }
 footer .footer-container {
@@ -246,55 +242,80 @@ body {
 }
 
 a {
-  color: white;
+  color: #000;
   text-decoration: none;
 }
 
 header {
   width: 100%;
-  background: #CA0002;
+  background: #F7F7F7;
+  font-size: 1.6em;
 }
 
-ul.nav, ul.sub-nav {
+nav ul {
+  padding: 0 2% 0 0;
   margin: 0;
-  padding: 0;
   float: right;
-  position: relative;
 }
 
-ul.nav li {
+nav li {
   display: inline;
-}
-
-ul.nav li a {
-  padding: 10px;
+  position: relative;
   float: left;
 }
-
-ul.nav li ul {
+nav li a {
+  padding: 10px 15px;
+  float: left;
+}
+nav li a:hover {
+  background: #b5b5ad;
+}
+nav li ul {
   position: absolute;
-  top: 38px;
-  float: left;
-  background: #DFDFDF;
   display: none;
+  top: 100%;
+  left: 0;
+  padding-left: 0;
+  list-style: none;
+  background: #727268;
+}
+nav li ul li {
+  display: list-item;
+  float: none;
+  width: auto;
+}
+nav li ul li a {
+  display: block;
+  padding: 3px 15px;
+  float: none;
+}
+nav li ul li a:hover {
+  background: #b5b5ad;
 }
 
-ul.nav li ul li a {
-  padding: 5px 10px;
-  color: black;
-}
-
-ul.nav li:hover ul {
+nav li:hover ul {
   display: block;
 }
 
-ul.nav li:hover a {
-  background: #dfdfdf;
-  color: black;
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-span.arrow {
-  font-size: 10px;
+.front .hero {
+  width: 100%;
+  height: 370px;
+}
+.front .content,
+.front .sidebar {
+  float: left;
+}
+.front .content {
+  width: 75%;
+}
+.front .sidebar {
+  width: 25%;
 }
 
 /*# sourceMappingURL=style.css.map */

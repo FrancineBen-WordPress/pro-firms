@@ -232,6 +232,15 @@ footer img {
   top: -20px;
 }
 
+@media all and (max-width: 860px) {
+  footer .left-column, footer .right-column {
+    width: 100%;
+  }
+  footer .right-column {
+    padding-top: 30px;
+    text-align: center;
+  }
+}
 body {
   color: red;
 }
@@ -287,3 +296,5 @@ ul.nav li:hover a {
 span.arrow {
   font-size: 10px;
 }
+
+/*# sourceMappingURL=style.css.map */
