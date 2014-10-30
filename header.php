@@ -10,7 +10,7 @@
   <?php // Load our CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
-<?php wp_head(); ?> 
+  <?php  wp_head(); ?>
 </head>
 
 
@@ -22,7 +22,6 @@
       <?php wp_nav_menu(array(
         'container' => 'ul',
         'theme_location' => 'primary'
-      )); ?> 
-    </nav>
+      )); ?>     </nav>
   </header>
 
