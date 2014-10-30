@@ -283,6 +283,7 @@ nav li ul li {
   display: list-item;
   float: none;
   width: auto;
+<<<<<<< Updated upstream
 }
 nav li ul li a {
   display: block;
@@ -294,9 +295,19 @@ nav li ul li a:hover {
 }
 
 nav li:hover ul {
+=======
+}
+nav li ul li a {
+>>>>>>> Stashed changes
   display: block;
+  padding: 3px 15px;
+  float: none;
+}
+nav li ul li a:hover {
+  background: #b5b5ad;
 }
 
+<<<<<<< Updated upstream
 .wrapper {
   width: 90%;
   max-width: 1200px;
@@ -316,6 +327,16 @@ nav li:hover ul {
 }
 .front .sidebar {
   width: 25%;
+=======
+nav li:hover ul {
+  display: block;
+}
+
+.hero {
+  background-size: cover;
+  height: 400px;
+  background-repeat: no-repeat;
+>>>>>>> Stashed changes
 }
 
 /*# sourceMappingURL=style.css.map */
