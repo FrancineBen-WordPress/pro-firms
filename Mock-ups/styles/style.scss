@@ -1,10 +1,42 @@
+// --- Font Import ---
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600|Playfair+Display:400,700);
+
+$baseFont: 'Source Sans Pro', sans-serif;
+$headingsFont: 'Playfair Display', serif;
+$fontSize: 1.6em;
+$fontWeight: 300;
+$fontColour: #333;
+$inverseColour: #efefef;
+
+$primaryColour: #81B89D ;
+$successColour: #759DA7;
+$errorColour: #EB4B4D;
+$sectionColour: #3A3736;
+
+// --- Partials ---
 @import "starter";
 @import "grid";
 @import "footer";
 @import "mq";
 
+
 body {
-  color: red;
+  color: $fontColour;
+  color: $fontColour;
+  font-family: $baseFont;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: $headingsFont;
+  margin: $fontSize*1.4 0;
+}
+
+p {
+  line-height: $fontSize*1.1;
+  margin: $fontSize*0.5 0;
 }
 
 a {
@@ -18,13 +50,13 @@ a {
 header {
   width: 100%;
   background:#F7F7F7;
-  font-size: 1.6em;
+  font-size: $fontSize*0.8;
 }
 
 // --- Navigation ---
 
 nav ul {
-  padding: 0 2% 0 0;
+
   margin: 0;
   float: right;
 }
@@ -88,17 +120,19 @@ nav li:hover ul {
   .content, 
   .sidebar {
     float: left;
+    padding: 0 5px;
   }
   .content {
-    width: 75%;
+    width: 70%;
   }
   .sidebar {
-    width: 25%;
+    width: 30%;
   }
 }
-// --- Hero ---
-.hero {
-  background-size: cover;
-  height: 400px;
-  background-repeat: no-repeat;
-}
+
+
+
+
+
+// --- Footer ---
+
