@@ -32,6 +32,9 @@ body {
 h1,h2,h3,h4,h5 {
   font-family: $headingsFont;
   margin: $fontSize*1.4 0;
+  a {
+    text-decoration: none;
+  }
 }
 
 h2 {
@@ -43,10 +46,10 @@ p {
   margin: $fontSize*0.5 0;
 }
 
-a {
-  color: #000;
-  text-decoration: none;
-}
+
+ a {
+  color: $primaryColour;
+ }
 
 
 // --- Header ---
@@ -69,11 +72,11 @@ nav li {
   display: inline;
   position: relative;
   float: left;
-
   a {
     padding: 10px 15px;
     float: left;
-
+    color: $fontColour;
+    text-decoration: none;
     &:hover {
       background: #b5b5ad;
     }
@@ -154,4 +157,90 @@ nav li:hover ul {
     margin: 0;
   }
 }
+
+// ----- Articles Page ------
+.articles {
+  width: 90%;
+  margin: 0 auto;
+  article {
+    border-bottom: 1px dashed #898989;
+    padding-bottom: 30px;
+    h1, h2 {
+      margin: 1.6em 0 0.6em;
+    }
+  }
+  .gallery::before {
+    clear: both;
+  }
+  .gallery-icon {
+    width: auto;
+    float: left;
+    margin-right: 5px;
+  }
+  img {
+    max-width: 100%;
+  }
+  footer {
+    padding: 0;
+    background: #fff;
+    color: #8E8E8E;
+    margin-top: 30px;
+    font-size: $fontSize*0.4;
+    p {
+      margin: $fontSize*0.1 0;
+    }
+  }
+  table {
+    th {
+      text-align: left;
+    }
+    td {
+      padding-right: 20px;
+    }
+  }
+  dt {
+    font-weight: 600;
+    margin-top: 7px;
+  }
+  address {
+    margin-left: 10px;
+  }
+  q::after,
+  q:after {
+    color:red;
+  }
+  figure.alignleft,
+  img.alignleft {
+    float: left;
+    margin-right: 15px;
+    &::after,
+    &:after {
+      clear: after;
+    }
+  }
+  figure.alignright,
+  img.alignright {
+    float: right;
+    margin-left: 15px; 
+    &::after,
+    &:after {
+      clear: after;
+    }
+  }
+
+  figcaption {
+    font-size: $fontSize*0.5;
+  }
+
+}
+
+  figure.aligncenter {
+    width: auto;
+    margin: 0 auto;
+    img {
+      margin: 0 auto
+    }
+  }
+
+
 

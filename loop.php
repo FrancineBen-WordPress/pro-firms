@@ -16,13 +16,13 @@
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<article class="clearfix" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 			<h2 class="entry-title">
         <a href="<?php the_permalink(); ?>" title="Permalink to: <?php esc_attr(the_title_attribute()); ?>" rel="bookmark">
           <?php the_title(); ?>
         </a>
       </h2>
-
+		<?php the_post_thumbnail('full'); ?>
 			<section class="entry-content">
 				<?php the_content('Continue reading <span class="meta-nav">&rarr;</span>'); ?>
 				<?php wp_link_pages( array(
