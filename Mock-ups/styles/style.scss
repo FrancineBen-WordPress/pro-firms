@@ -34,6 +34,10 @@ h1,h2,h3,h4,h5 {
   margin: $fontSize*1.4 0;
 }
 
+h2 {
+  margin: $fontSize 0;
+}
+
 p {
   line-height: $fontSize*1.1;
   margin: $fontSize*0.5 0;
@@ -112,27 +116,41 @@ nav li:hover ul {
   margin: 0 auto;
 }
 
-.front {
-  .hero {
-    width: 100%;
-    height: 370px;
-  }
-  .content, 
-  .sidebar {
-    float: left;
-    padding: 0 5px;
-  }
-  .content {
+.content, 
+.sidebar {
+  float: left;
+  padding: 0 5px;
+}
+ .content {
     width: 70%;
   }
   .sidebar {
     width: 30%;
   }
+
+.front {
+  .hero {
+    width: 100%;
+    height: 370px;
+  }
+ 
 }
 
 
 
 
 
-// --- Footer ---
+// --- Contact Page ---
+.contact h3 {
+  margin-bottom: 10px;
+}
+.contact-details {
+  float: left;
+  width: 33.3333%;
+  margin: 0;
+  
+  p {
+    margin: 0;
+  }
+}
 
