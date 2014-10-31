@@ -159,16 +159,19 @@ nav li:hover ul {
 }
 
 // ----- Articles Page ------
-.articles {
-  width: 90%;
-  margin: 0 auto;
-  article {
+article {
     border-bottom: 1px dashed #898989;
     padding-bottom: 30px;
+}
+
+div.articles,
+div.single {
+  margin: 0 auto;
+
     h1, h2 {
       margin: 1.6em 0 0.6em;
     }
-  }
+  
   .gallery::before {
     clear: both;
   }
@@ -241,6 +244,17 @@ nav li:hover ul {
       margin: 0 auto
     }
   }
+
+  // ------- Single Posts -------
+  // .single {
+  //   h1, h2 {
+  //     margin: 1.6em 0 0.6em;
+  //   }
+  //   .content {
+  //     width: 90%;
+
+  //   }
+  // }
 
 
 

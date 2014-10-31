@@ -360,76 +360,103 @@ nav li:hover ul {
   margin: 0;
 }
 
-.articles {
-  width: 90%;
-  margin: 0 auto;
-}
-.articles article {
+article {
   border-bottom: 1px dashed #898989;
   padding-bottom: 30px;
 }
-.articles article h1, .articles article h2 {
+
+div.articles,
+div.single {
+  margin: 0 auto;
+}
+div.articles h1, div.articles h2,
+div.single h1,
+div.single h2 {
   margin: 1.6em 0 0.6em;
 }
-.articles .gallery::before {
+div.articles .gallery::before,
+div.single .gallery::before {
   clear: both;
 }
-.articles .gallery-icon {
+div.articles .gallery-icon,
+div.single .gallery-icon {
   width: auto;
   float: left;
   margin-right: 5px;
 }
-.articles img {
+div.articles img,
+div.single img {
   max-width: 100%;
 }
-.articles footer {
+div.articles footer,
+div.single footer {
   padding: 0;
   background: #fff;
   color: #8E8E8E;
   margin-top: 30px;
   font-size: 0.64em;
 }
-.articles footer p {
+div.articles footer p,
+div.single footer p {
   margin: 0.16em 0;
 }
-.articles table th {
+div.articles table th,
+div.single table th {
   text-align: left;
 }
-.articles table td {
+div.articles table td,
+div.single table td {
   padding-right: 20px;
 }
-.articles dt {
+div.articles dt,
+div.single dt {
   font-weight: 600;
   margin-top: 7px;
 }
-.articles address {
+div.articles address,
+div.single address {
   margin-left: 10px;
 }
-.articles q::after,
-.articles q:after {
+div.articles q::after,
+div.articles q:after,
+div.single q::after,
+div.single q:after {
   color: red;
 }
-.articles figure.alignleft,
-.articles img.alignleft {
+div.articles figure.alignleft,
+div.articles img.alignleft,
+div.single figure.alignleft,
+div.single img.alignleft {
   float: left;
   margin-right: 15px;
 }
-.articles figure.alignleft::after, .articles figure.alignleft:after,
-.articles img.alignleft::after,
-.articles img.alignleft:after {
+div.articles figure.alignleft::after, div.articles figure.alignleft:after,
+div.articles img.alignleft::after,
+div.articles img.alignleft:after,
+div.single figure.alignleft::after,
+div.single figure.alignleft:after,
+div.single img.alignleft::after,
+div.single img.alignleft:after {
   clear: after;
 }
-.articles figure.alignright,
-.articles img.alignright {
+div.articles figure.alignright,
+div.articles img.alignright,
+div.single figure.alignright,
+div.single img.alignright {
   float: right;
   margin-left: 15px;
 }
-.articles figure.alignright::after, .articles figure.alignright:after,
-.articles img.alignright::after,
-.articles img.alignright:after {
+div.articles figure.alignright::after, div.articles figure.alignright:after,
+div.articles img.alignright::after,
+div.articles img.alignright:after,
+div.single figure.alignright::after,
+div.single figure.alignright:after,
+div.single img.alignright::after,
+div.single img.alignright:after {
   clear: after;
 }
-.articles figcaption {
+div.articles figcaption,
+div.single figcaption {
   font-size: 0.8em;
 }
 
