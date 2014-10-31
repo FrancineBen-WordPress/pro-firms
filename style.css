@@ -252,6 +252,9 @@ h1, h2, h3, h4, h5 {
   font-family: "Playfair Display", serif;
   margin: 2.24em 0;
 }
+h1 a, h2 a, h3 a, h4 a, h5 a {
+  text-decoration: none;
+}
 
 h2 {
   margin: 1.6em 0;
@@ -263,8 +266,7 @@ p {
 }
 
 a {
-  color: #000;
-  text-decoration: none;
+  color: #81B89D;
 }
 
 header {
@@ -286,6 +288,8 @@ nav li {
 nav li a {
   padding: 10px 15px;
   float: left;
+  color: #333;
+  text-decoration: none;
 }
 nav li a:hover {
   background: #b5b5ad;
@@ -354,6 +358,87 @@ nav li:hover ul {
 }
 .contact-details p {
   margin: 0;
+}
+
+.articles {
+  width: 90%;
+  margin: 0 auto;
+}
+.articles article {
+  border-bottom: 1px dashed #898989;
+  padding-bottom: 30px;
+}
+.articles article h1, .articles article h2 {
+  margin: 1.6em 0 0.6em;
+}
+.articles .gallery::before {
+  clear: both;
+}
+.articles .gallery-icon {
+  width: auto;
+  float: left;
+  margin-right: 5px;
+}
+.articles img {
+  max-width: 100%;
+}
+.articles footer {
+  padding: 0;
+  background: #fff;
+  color: #8E8E8E;
+  margin-top: 30px;
+  font-size: 0.64em;
+}
+.articles footer p {
+  margin: 0.16em 0;
+}
+.articles table th {
+  text-align: left;
+}
+.articles table td {
+  padding-right: 20px;
+}
+.articles dt {
+  font-weight: 600;
+  margin-top: 7px;
+}
+.articles address {
+  margin-left: 10px;
+}
+.articles q::after,
+.articles q:after {
+  color: red;
+}
+.articles figure.alignleft,
+.articles img.alignleft {
+  float: left;
+  margin-right: 15px;
+}
+.articles figure.alignleft::after, .articles figure.alignleft:after,
+.articles img.alignleft::after,
+.articles img.alignleft:after {
+  clear: after;
+}
+.articles figure.alignright,
+.articles img.alignright {
+  float: right;
+  margin-left: 15px;
+}
+.articles figure.alignright::after, .articles figure.alignright:after,
+.articles img.alignright::after,
+.articles img.alignright:after {
+  clear: after;
+}
+.articles figcaption {
+  font-size: 0.8em;
+}
+
+figure.aligncenter {
+  width: auto;
+  margin: 0 auto;
+}
+figure.aligncenter img {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
