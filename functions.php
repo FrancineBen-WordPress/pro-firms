@@ -37,6 +37,7 @@ function theme_setup() {
 }
 endif;
 
+
 add_action( 'after_setup_theme', 'theme_setup' );
 
 
@@ -267,3 +268,9 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+
+function my_add_excerpts_to_pages() {
+	add_post_type_support( 'page', 'excerpt' );
+}
+add_action( 'init', 'my_add_excerpts_to_pages');
