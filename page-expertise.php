@@ -5,37 +5,33 @@
 
     <div class="content">
       
-    <?php 
+<?php
 
-      $expr = array(
-        'child_of' => $post->ID,
-        'title_li' => ''
-      );
+// Get the page as an Object
+$expertise_page =  get_page_by_title('Expertise');
 
-    ?>
+  $mypages = get_pages( array( 
+    'child_of' => $expertise_page->ID, 
+    'sort_column' => 'post_date', 
+    'sort_order' => 'desc' )
+  );
 
-      <?php wp_list_pages($expr); ?>
-      
-      <?php 
-        $expertiseQuery = new WP_Query(
-          array(
-            'post_parent' => 18
-            // 'pagename' => 'Expertise/Tax Law'
-          )
-        ); ?>
 
-      <?php // Start the loop ?>
-      <?php if ( $expertiseQuery->have_posts() ) while ( $expertiseQuery->have_posts() ) : $expertiseQuery->the_post(); ?>
+  foreach( $mypages as $page ) {    
+    $content = $page->post_content;
+    if ( ! $page) // Check for empty page
+      continue;
+    $content = apply_filters( 'the_content', $content );
+  ?>
+    <h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
+    <div class="entry"><?php echo $content; ?></div>
+  <?php
+  } 
+?>
 
-        <h2><?php the_title(); ?></h2>
-        <?php the_content(); ?>
+    </div> <!-- /.content -->
 
-      <?php endwhile; // end the loop?>
-
-      <?php wp_reset_postdata(); ?>
-    </div> <!-- /,content -->
-
-    <?php get_sidebar(); ?>
+    <?php //get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
