@@ -315,6 +315,7 @@ nav li ul li a:hover {
 
 nav li:hover ul {
   display: block;
+  z-index: 100;
 }
 
 .wrapper {
