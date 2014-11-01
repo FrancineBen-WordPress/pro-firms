@@ -245,16 +245,35 @@ div.single {
     }
   }
 
-  // ------- Single Posts -------
-  // .single {
-  //   h1, h2 {
-  //     margin: 1.6em 0 0.6em;
-  //   }
-  //   .content {
-  //     width: 90%;
-
-  //   }
-  // }
-
-
+// ---- Team Page ----
+.team { 
+  section {
+    width: 45%;
+    float: left;
+    padding: 0 25px;
+    margin-top: 25px;
+  }
+  section:first-of-type,
+  section:nth-of-type(2){
+     margin-top: 0;
+   }
+   section:nth-of-type(even){
+    margin-right: 0;
+   }
+    h3, h4 {
+      margin: 0 0 0.6em;
+    }
+div.additional_info {
+  background: #eee;
+  padding: 10px 15px;
+}
+  img {
+    float: left;
+    margin-right: 15px; 
+    &::after,
+    &:after {
+      clear: after;
+    }
+  }
+}
 
