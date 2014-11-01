@@ -31,7 +31,7 @@ $expertise_page =  get_page_by_title('Expertise');
     $excerpt = substr($content, 0,600);
   ?>
     <h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
-    <div class="entry"><?php echo $excerpt; ?>...</div>
+    <div class="entry"><?php echo $excerpt; ?>&#8230;</div>
     <h4><a href="<?php echo get_page_link( $page->ID ); ?>">Read More</a></h4>
   <?php
   } 
