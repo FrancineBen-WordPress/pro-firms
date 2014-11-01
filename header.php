@@ -17,11 +17,14 @@
 <body <?php body_class(); ?>>
 
 <header class="clearfix">
-    <!-- <img src="images/mallet-trim.png" alt=""> -->
-    <nav class="wrapper clearfix">
-      <?php wp_nav_menu(array(
-        'container' => 'ul',
-        'theme_location' => 'primary'
-      )); ?>     </nav>
-  </header>
+
+
+  <nav class="wrapper clearfix">
+  <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo-400x50.png" alt=""></a>
+    <?php wp_nav_menu(array(
+      'container' => 'ul',
+      'theme_location' => 'primary'
+    )); ?>
+  </nav>
+</header>
 

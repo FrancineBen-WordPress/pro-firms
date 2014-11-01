@@ -32,6 +32,11 @@ footer {
 		}
 		a {
 			color: #333;
+			text-decoration: none;
+			font-weight: 600;
+			&:hover {
+				color: $primaryColour;
+			}
 		}
 	}
 	p {
@@ -45,4 +50,11 @@ footer {
 		left: 20px;
 		top: -20px;
 	}
+}
+
+footer ul li.current-menu-item > a:link,
+footer ul li.current-menu-item > a:visited,
+footer ul li.current-page-ancestor > a:link,
+footer ul li.current-page-ancestor > a:visited {
+  color: $primaryColour;
 }

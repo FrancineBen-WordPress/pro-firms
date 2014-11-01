@@ -1,7 +1,7 @@
 <?php get_header();  ?>
 
 <div class="main">
-  <div class="wrapper clearfix contact">
+  <div class="wrapper clearfix expertise">
 
     <div class="content">
        <?php // Start the loop ?>
@@ -30,16 +30,14 @@ $expertise_page =  get_page_by_title('Expertise');
     $content = apply_filters( 'the_content', $content );
     $excerpt = substr($content, 0,600);
   ?>
-    <h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
+    <h3><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h3>
     <div class="entry"><?php echo $excerpt; ?>&#8230;</div>
-    <h4><a href="<?php echo get_page_link( $page->ID ); ?>">Read More</a></h4>
+    <h4 class="readmore"><a href="<?php echo get_page_link( $page->ID ); ?>">Read More</a></h4>
   <?php
   } 
 ?>
 
     </div> <!-- /.content -->
-
-    <?php //get_sidebar(); ?>
 
   </div> <!-- /.container -->
 </div> <!-- /.main -->
