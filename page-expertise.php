@@ -4,7 +4,13 @@
   <div class="wrapper clearfix contact">
 
     <div class="content">
-      
+       <?php // Start the loop ?>
+      <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+        <h2><?php the_title(); ?></h2>
+        <?php the_content(); ?>
+
+      <?php endwhile; // end the loop?>
 <?php
 
 // Get the page as an Object
@@ -22,9 +28,11 @@ $expertise_page =  get_page_by_title('Expertise');
     if ( ! $page) // Check for empty page
       continue;
     $content = apply_filters( 'the_content', $content );
+    $excerpt = substr($content, 0,600);
   ?>
     <h2><a href="<?php echo get_page_link( $page->ID ); ?>"><?php echo $page->post_title; ?></a></h2>
-    <div class="entry"><?php echo $content; ?></div>
+    <div class="entry"><?php echo $excerpt; ?>...</div>
+    <h4><a href="<?php echo get_page_link( $page->ID ); ?>">Read More</a></h4>
   <?php
   } 
 ?>
