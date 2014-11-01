@@ -468,4 +468,32 @@ figure.aligncenter img {
   margin: 0 auto;
 }
 
+.team section {
+  width: 45%;
+  float: left;
+  padding: 0 25px;
+  margin-top: 25px;
+}
+.team section:first-of-type,
+.team section:nth-of-type(2) {
+  margin-top: 0;
+}
+.team section:nth-of-type(even) {
+  margin-right: 0;
+}
+.team h3, .team h4 {
+  margin: 0 0 0.6em;
+}
+.team div.additional_info {
+  background: #eee;
+  padding: 10px 15px;
+}
+.team img {
+  float: left;
+  margin-right: 15px;
+}
+.team img::after, .team img:after {
+  clear: after;
+}
+
 /*# sourceMappingURL=style.css.map */
