@@ -219,6 +219,11 @@ footer .footer-nav li {
 }
 footer .footer-nav a {
   color: #333;
+  text-decoration: none;
+  font-weight: 600;
+}
+footer .footer-nav a:hover {
+  color: #81B89D;
 }
 footer p {
   width: 100%;
@@ -229,6 +234,13 @@ footer img {
   position: relative;
   left: 20px;
   top: -20px;
+}
+
+footer ul li.current-menu-item > a:link,
+footer ul li.current-menu-item > a:visited,
+footer ul li.current-page-ancestor > a:link,
+footer ul li.current-page-ancestor > a:visited {
+  color: #81B89D;
 }
 
 @media all and (max-width: 860px) {
@@ -257,7 +269,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 }
 
 h2 {
-  margin: 1.6em 0;
+  margin: 1.6em 0 0.64em 0;
+}
+h2:first-of-type {
+  font-size: 2.08em;
 }
 
 p {
@@ -271,8 +286,26 @@ a {
 
 header {
   width: 100%;
-  background: #F7F7F7;
   font-size: 1.28em;
+  background: #f7f7f7;
+}
+header img {
+  margin-left: -25px;
+  margin-top: 11px;
+  width: 265px;
+}
+
+.home header {
+  position: absolute;
+  top: 4%;
+  left: 0;
+  background: rgba(247, 247, 247, 0.7);
+}
+.home header li ul {
+  background: rgba(230, 230, 230, 0.7);
+}
+.home header li ul a:hover {
+  background: rgba(247, 247, 247, 0.7);
 }
 
 nav ul {
@@ -292,7 +325,7 @@ nav li a {
   text-decoration: none;
 }
 nav li a:hover {
-  background: #b5b5ad;
+  color: #81B89D;
 }
 nav li ul {
   position: absolute;
@@ -301,7 +334,7 @@ nav li ul {
   left: 0;
   padding-left: 0;
   list-style: none;
-  background: #727268;
+  background: #e6e6e6;
 }
 nav li ul li {
   display: list-item;
@@ -314,12 +347,20 @@ nav li ul li a {
   float: none;
 }
 nav li ul li a:hover {
-  background: #b5b5ad;
+  background: #f7f7f7;
 }
 
 nav li:hover ul {
   display: block;
   z-index: 100;
+}
+
+header nav ul li.current-menu-item > a:link,
+header nav ul li.current-menu-item > a:visited,
+header nav ul li.current-page-ancestor > a:link,
+header nav ul li.current-page-ancestor > a:visited {
+  color: #81B89D;
+  cursor: default;
 }
 
 .wrapper {
@@ -378,8 +419,8 @@ div.articles .gallery::before,
 div.single .gallery::before {
   clear: both;
 }
-div.articles .gallery-icon,
-div.single .gallery-icon {
+div.articles .gallery-item,
+div.single .gallery-item {
   width: auto;
   float: left;
   margin-right: 5px;
@@ -494,6 +535,23 @@ figure.aligncenter img {
 }
 .team img::after, .team img:after {
   clear: after;
+}
+
+.readmore {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.expertise h2,
+.expertise h3 {
+  margin: 20px 0;
+}
+.expertise h3 {
+  font-size: 1.44em;
+}
+
+.entry h2 {
+  font-size: 1.28em;
 }
 
 /*# sourceMappingURL=style.css.map */
