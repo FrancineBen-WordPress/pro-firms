@@ -184,6 +184,85 @@ body:after {
   clear: both;
 }
 
+header {
+  width: 100%;
+  font-size: 1.28em;
+  background: #f7f7f7;
+}
+header img {
+  margin-left: -25px;
+  margin-top: 11px;
+  width: 265px;
+}
+
+.home header {
+  position: absolute;
+  top: 4%;
+  left: 0;
+  background: rgba(247, 247, 247, 0.7);
+}
+.home header li ul {
+  background: rgba(230, 230, 230, 0.7);
+}
+.home header li ul a:hover {
+  background: rgba(247, 247, 247, 0.7);
+}
+
+nav ul {
+  margin: 0;
+  float: right;
+}
+
+nav li {
+  display: inline;
+  position: relative;
+  float: left;
+}
+nav li a {
+  padding: 10px 15px;
+  float: left;
+  color: #333;
+  text-decoration: none;
+}
+nav li a:hover {
+  color: #81B89D;
+}
+nav li ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  padding-left: 0;
+  list-style: none;
+  background: #e6e6e6;
+}
+nav li ul li {
+  display: list-item;
+  float: none;
+  width: auto;
+}
+nav li ul li a {
+  display: block;
+  padding: 3px 15px;
+  float: none;
+}
+nav li ul li a:hover {
+  background: #f7f7f7;
+}
+
+nav li:hover ul {
+  display: block;
+  z-index: 100;
+}
+
+header nav ul li.current-menu-item > a:link,
+header nav ul li.current-menu-item > a:visited,
+header nav ul li.current-page-ancestor > a:link,
+header nav ul li.current-page-ancestor > a:visited {
+  color: #81B89D;
+  cursor: default;
+}
+
 footer {
   width: 100%;
   padding: 30px 50px;
@@ -282,85 +361,6 @@ p {
 
 a {
   color: #81B89D;
-}
-
-header {
-  width: 100%;
-  font-size: 1.28em;
-  background: #f7f7f7;
-}
-header img {
-  margin-left: -25px;
-  margin-top: 11px;
-  width: 265px;
-}
-
-.home header {
-  position: absolute;
-  top: 4%;
-  left: 0;
-  background: rgba(247, 247, 247, 0.7);
-}
-.home header li ul {
-  background: rgba(230, 230, 230, 0.7);
-}
-.home header li ul a:hover {
-  background: rgba(247, 247, 247, 0.7);
-}
-
-nav ul {
-  margin: 0;
-  float: right;
-}
-
-nav li {
-  display: inline;
-  position: relative;
-  float: left;
-}
-nav li a {
-  padding: 10px 15px;
-  float: left;
-  color: #333;
-  text-decoration: none;
-}
-nav li a:hover {
-  color: #81B89D;
-}
-nav li ul {
-  position: absolute;
-  display: none;
-  top: 100%;
-  left: 0;
-  padding-left: 0;
-  list-style: none;
-  background: #e6e6e6;
-}
-nav li ul li {
-  display: list-item;
-  float: none;
-  width: auto;
-}
-nav li ul li a {
-  display: block;
-  padding: 3px 15px;
-  float: none;
-}
-nav li ul li a:hover {
-  background: #f7f7f7;
-}
-
-nav li:hover ul {
-  display: block;
-  z-index: 100;
-}
-
-header nav ul li.current-menu-item > a:link,
-header nav ul li.current-menu-item > a:visited,
-header nav ul li.current-page-ancestor > a:link,
-header nav ul li.current-page-ancestor > a:visited {
-  color: #81B89D;
-  cursor: default;
 }
 
 .wrapper {

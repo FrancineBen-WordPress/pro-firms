@@ -17,6 +17,7 @@ $sectionColour: #3A3736;
 // --- Partials ---
 @import "starter";
 @import "grid";
+@import "header";
 @import "footer";
 @import "mq";
 
@@ -53,94 +54,6 @@ p {
  a {
   color: $primaryColour;
  }
-
-// --- Header ---
-
-header {
-  width: 100%;
-  font-size: $fontSize*0.8;
-  background: #f7f7f7;
-  img {
-    margin-left: -25px;
-    margin-top: 11px;
-    width: 265px;
-  }
-}
-
-.home header {
-  position: absolute;
-  top: 4%;
-  left: 0;
-  background:rgba(247,247,247,0.7);
-  li ul {
-    background:rgba(230,230,230,0.7);
-    a:hover {
-      background:rgba(247,247,247,0.7);
-    }
-  }
-}
-
-
-// --- Navigation ---
-
-nav ul {
-
-  margin: 0;
-  float: right;
-}
-
-nav li {
-  display: inline;
-  position: relative;
-  float: left;
-  a {
-    padding: 10px 15px;
-    float: left;
-    color: $fontColour;
-    text-decoration: none;
-    &:hover {
-      color: $primaryColour;
-    }
-  }
-
-  ul {
-    position: absolute;
-    display: none;
-    top: 100%;
-    left: 0;
-    padding-left: 0;
-    list-style: none;
-    background: #e6e6e6;
-    li {
-      display: list-item;
-      float: none;
-      width: auto;
-
-      a {
-        display: block;
-        padding: 3px 15px;
-        float: none;
-
-        &:hover {
-          background: #f7f7f7;
-        }
-      }
-    }
-  }
-}
-
-nav li:hover ul {
-  display: block;
-  z-index: 100;
-}
-
-header nav ul li.current-menu-item > a:link,
-header nav ul li.current-menu-item > a:visited,
-header nav ul li.current-page-ancestor > a:link,
-header nav ul li.current-page-ancestor > a:visited {
-  color: $primaryColour;
-  cursor: default;
-}
 
 .wrapper {
   width: 90%;
