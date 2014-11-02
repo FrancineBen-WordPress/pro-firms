@@ -457,30 +457,38 @@ article {
 }
 
 div.articles,
-div.single {
+div.single,
+.page {
   margin: 0 auto;
 }
 div.articles h1, div.articles h2,
 div.single h1,
-div.single h2 {
+div.single h2,
+.page h1,
+.page h2 {
   margin: 1.6em 0 0.6em;
 }
 div.articles .gallery::before,
-div.single .gallery::before {
+div.single .gallery::before,
+.page .gallery::before {
   clear: both;
 }
 div.articles .gallery-item,
-div.single .gallery-item {
+div.single .gallery-item,
+.page .gallery-item {
   width: auto;
   float: left;
   margin-right: 5px;
 }
 div.articles img,
-div.single img {
+div.single img,
+.page img {
   max-width: 100%;
+  margin-right: 10px;
 }
 div.articles footer,
-div.single footer {
+div.single footer,
+.page footer {
   padding: 0;
   background: #fff;
   color: #8E8E8E;
@@ -488,36 +496,45 @@ div.single footer {
   font-size: 0.64em;
 }
 div.articles footer p,
-div.single footer p {
+div.single footer p,
+.page footer p {
   margin: 0.16em 0;
 }
 div.articles table th,
-div.single table th {
+div.single table th,
+.page table th {
   text-align: left;
 }
 div.articles table td,
-div.single table td {
+div.single table td,
+.page table td {
   padding-right: 20px;
 }
 div.articles dt,
-div.single dt {
+div.single dt,
+.page dt {
   font-weight: 600;
   margin-top: 7px;
 }
 div.articles address,
-div.single address {
+div.single address,
+.page address {
   margin-left: 10px;
 }
 div.articles q::after,
 div.articles q:after,
 div.single q::after,
-div.single q:after {
+div.single q:after,
+.page q::after,
+.page q:after {
   color: red;
 }
 div.articles figure.alignleft,
 div.articles img.alignleft,
 div.single figure.alignleft,
-div.single img.alignleft {
+div.single img.alignleft,
+.page figure.alignleft,
+.page img.alignleft {
   float: left;
   margin-right: 15px;
 }
@@ -527,13 +544,19 @@ div.articles img.alignleft:after,
 div.single figure.alignleft::after,
 div.single figure.alignleft:after,
 div.single img.alignleft::after,
-div.single img.alignleft:after {
+div.single img.alignleft:after,
+.page figure.alignleft::after,
+.page figure.alignleft:after,
+.page img.alignleft::after,
+.page img.alignleft:after {
   clear: after;
 }
 div.articles figure.alignright,
 div.articles img.alignright,
 div.single figure.alignright,
-div.single img.alignright {
+div.single img.alignright,
+.page figure.alignright,
+.page img.alignright {
   float: right;
   margin-left: 15px;
 }
@@ -543,11 +566,16 @@ div.articles img.alignright:after,
 div.single figure.alignright::after,
 div.single figure.alignright:after,
 div.single img.alignright::after,
-div.single img.alignright:after {
+div.single img.alignright:after,
+.page figure.alignright::after,
+.page figure.alignright:after,
+.page img.alignright::after,
+.page img.alignright:after {
   clear: after;
 }
 div.articles figcaption,
-div.single figcaption {
+div.single figcaption,
+.page figcaption {
   font-size: 0.8em;
 }
 
