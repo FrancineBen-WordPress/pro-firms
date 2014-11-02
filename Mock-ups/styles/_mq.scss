@@ -1,3 +1,57 @@
+
+// @media all and (max-width: ){
+	
+// }
+@media all and (max-width: 1140px){
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+	}
+}
+
+@media all and (max-width: 1030px){
+	.front,
+	.page {
+		.content {
+			width: 60%;
+		}
+		.sidebar {
+			width: 40%;
+		}
+	}
+	.expertise .content {
+		width: 90%;
+	}
+}
+
+@media all and (max-width: 800px){
+		.front,
+		.page {
+		.content {
+			width: 90%;
+			float: none;
+		}
+		.sidebar {
+			width: 80%;
+			// margin: 0 auto;
+			float: none;
+			border-top: $divider;
+			clear: both;
+		}
+	}
+	.team section {
+		float: none;
+		width: 100%;
+		margin-bottom: 30px;
+		border-bottom: $divider;
+		&:last-of-type {
+			margin-bottom: none;
+			border-bottom: none;
+		}
+	}
+}
+
 @media all and (max-width: 860px) {
 	footer { 
 		.left-column, .right-column {
@@ -7,5 +61,55 @@
 			padding-top: 30px;
 			text-align: center;
 		}
+	}
+}
+
+@media all and (max-width: 730px) {
+	.contact-details {
+		float: none;
+		width: 100%;
+		margin-bottom: 15px;
+		&:last-of-type {
+			margin-bottom: none;
+		}
+	}
+	.contact {
+		.sidebar {
+			width: 100%;
+			ul {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 420px) {
+	.readmore {
+		padding-bottom: 25px;
+		border-bottom: $divider;
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+}
+
+
+@media all and (max-width: 400px) {
+	.front,
+	
+
+	.page {
+		.sidebar {
+			display: none;
+		}	
+	}
+	.contact .sidebar {
+		display: block;
+	}
+}
+
+@media all and (max-width: 380px){
+	.team img {
+		float: none;
 	}
 }

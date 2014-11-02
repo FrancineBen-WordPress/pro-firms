@@ -322,15 +322,6 @@ footer ul li.current-page-ancestor > a:visited {
   color: #81B89D;
 }
 
-@media all and (max-width: 860px) {
-  footer .left-column, footer .right-column {
-    width: 100%;
-  }
-  footer .right-column {
-    padding-top: 30px;
-    text-align: center;
-  }
-}
 body {
   color: #333;
   color: #333;
@@ -350,8 +341,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 h2 {
   margin: 1.6em 0 0.64em 0;
 }
-h2:first-of-type {
+
+.content > h2 {
   font-size: 2.08em;
+}
+
+h3.widget-title {
+  margin-bottom: 10px;
 }
 
 p {
@@ -388,6 +384,10 @@ a {
   height: 370px;
 }
 
+.page.page-template-page-full-php .content {
+  width: 80%;
+}
+
 .contact h3 {
   margin-bottom: 10px;
 }
@@ -399,6 +399,13 @@ a {
 }
 .contact-details p {
   margin: 0;
+}
+
+.single-post .content {
+  width: 85%;
+}
+.single-post .entry-utility {
+  clear: both;
 }
 
 article {
@@ -510,7 +517,7 @@ figure.aligncenter img {
 }
 
 .team section {
-  width: 45%;
+  width: 50%;
   float: left;
   padding: 0 25px;
   margin-top: 25px;
@@ -524,10 +531,6 @@ figure.aligncenter img {
 }
 .team h3, .team h4 {
   margin: 0 0 0.6em;
-}
-.team div.additional_info {
-  background: #eee;
-  padding: 10px 15px;
 }
 .team img {
   float: left;
@@ -552,6 +555,103 @@ figure.aligncenter img {
 
 .entry h2 {
   font-size: 1.28em;
+}
+
+@media all and (max-width: 1140px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+}
+@media all and (max-width: 1030px) {
+  .front .content,
+  .page .content {
+    width: 60%;
+  }
+  .front .sidebar,
+  .page .sidebar {
+    width: 40%;
+  }
+
+  .expertise .content {
+    width: 90%;
+  }
+}
+@media all and (max-width: 800px) {
+  .front .content,
+  .page .content {
+    width: 90%;
+    float: none;
+  }
+  .front .sidebar,
+  .page .sidebar {
+    width: 80%;
+    float: none;
+    border-top: 1px dashed #898989;
+    clear: both;
+  }
+
+  .team section {
+    float: none;
+    width: 100%;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #898989;
+  }
+  .team section:last-of-type {
+    margin-bottom: none;
+    border-bottom: none;
+  }
+}
+@media all and (max-width: 860px) {
+  footer .left-column, footer .right-column {
+    width: 100%;
+  }
+  footer .right-column {
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+@media all and (max-width: 730px) {
+  .contact-details {
+    float: none;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .contact-details:last-of-type {
+    margin-bottom: none;
+  }
+
+  .contact .sidebar {
+    width: 100%;
+  }
+  .contact .sidebar ul {
+    padding-left: 0;
+  }
+}
+@media all and (max-width: 420px) {
+  .readmore {
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #898989;
+  }
+  .readmore:last-of-type {
+    border-bottom: none;
+  }
+}
+@media all and (max-width: 400px) {
+  .front .sidebar,
+  .page .sidebar {
+    display: none;
+  }
+
+  .contact .sidebar {
+    display: block;
+  }
+}
+@media all and (max-width: 380px) {
+  .team img {
+    float: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
