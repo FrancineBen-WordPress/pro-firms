@@ -486,20 +486,6 @@ div.single img,
   max-width: 100%;
   margin-right: 10px;
 }
-div.articles footer,
-div.single footer,
-.page footer {
-  padding: 0;
-  background: #fff;
-  color: #8E8E8E;
-  margin-top: 30px;
-  font-size: 0.64em;
-}
-div.articles footer p,
-div.single footer p,
-.page footer p {
-  margin: 0.16em 0;
-}
 div.articles table th,
 div.single table th,
 .page table th {
@@ -585,6 +571,19 @@ figure.aligncenter {
 }
 figure.aligncenter img {
   margin: 0 auto;
+}
+
+div.articles footer,
+div.single footer {
+  padding: 0;
+  background: #fff;
+  color: #8E8E8E;
+  margin-top: 30px;
+  font-size: 0.64em;
+}
+div.articles footer p,
+div.single footer p {
+  margin: 0.16em 0;
 }
 
 .team section {

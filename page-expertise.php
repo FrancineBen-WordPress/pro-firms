@@ -1,6 +1,5 @@
 <?php get_header();  ?>
 
-
 <?php global $post; ?>
 <?php if (has_post_thumbnail($post->ID)): ?>
   <?php $src = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), array(5600,1000), false) ?>
