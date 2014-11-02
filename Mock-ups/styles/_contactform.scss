@@ -1,0 +1,48 @@
+$outline: 2px solid $primaryColour;
+@mixin transition-all($duration) {
+	-webkit-transition: all $duration;
+	transition: all $duration;
+}
+
+.wpcf7-form {
+	p {
+		font-weight: 600;
+		font-size: $fontSize*0.6;
+		color: #515151;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	// border-left: 1px solid #898989;
+	border: 1px solid #E6E6E6;
+	// border-top: none;
+	// border-right: none;
+	padding: 5px 8px;
+	outline: none;
+	&:focus {
+		outline: $outline;
+	}
+}
+
+select {
+	font-family: $baseFont;
+	&:focus {
+		// outline: 1px solid #D6D6D6;
+	}
+}
+
+input[type="submit"] {
+	box-shadow: none;
+	background: $primaryColour;
+	border: 1px solid lighten($primaryColour,10);
+	border-radius: 3px;
+	padding: 5px 14px;
+	@include transition-all(0.3s);		
+	color: #FFF;
+	font-size: $fontSize*0.7;
+	&:hover {
+		background: darken($primaryColour, 12);
+	}
+}
