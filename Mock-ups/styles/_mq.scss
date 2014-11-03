@@ -25,34 +25,6 @@
 	}
 }
 
-@media all and (max-width: 800px){
-		.front,
-		.page {
-		.content {
-			width: 90%;
-			float: none;
-		}
-		.sidebar {
-			width: 80%;
-			// margin: 0 auto;
-			float: none;
-			border-left: none;
-			border-top: $divider;
-			clear: both;
-		}
-	}
-	.team section {
-		float: none;
-		width: 100%;
-		margin-bottom: 30px;
-		border-bottom: $divider;
-		&:last-of-type {
-			margin-bottom: none;
-			border-bottom: none;
-		}
-	}
-}
-
 @media all and (max-width: 860px) {
 	footer { 
 		.left-column, .right-column {
@@ -61,6 +33,54 @@
 		.right-column {
 			padding-top: 30px;
 			text-align: center;
+		}
+	}
+}
+
+@media all and (max-width: 800px){
+	header {
+		.logo {
+			width: 100%;
+			text-align: center;
+		}
+		nav ul {
+			width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      li {
+      	float: none;
+      	display: inline-block;
+      }
+      a {
+      	float: none;
+      	text-align: center;
+      }
+		}
+	}
+
+	.front,
+	.page {
+	.content {
+		width: 90%;
+		float: none;
+	}
+	.sidebar {
+		width: 80%;
+		// margin: 0 auto;
+		float: none;
+		border-left: none;
+		border-top: $divider;
+		clear: both;
+	}
+}
+	.team section {
+		float: none;
+		width: 100%;
+		margin-bottom: 30px;
+		border-bottom: $divider;
+		&:last-of-type {
+			margin-bottom: none;
+			border-bottom: none;
 		}
 	}
 }

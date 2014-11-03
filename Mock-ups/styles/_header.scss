@@ -2,6 +2,10 @@ header {
   width: 100%;
   font-size: $fontSize*0.8;
   background: #f7f7f7;
+  .logo {
+    width: 265px;
+    display: inline-block;
+  }
   img {
     margin-left: -25px;
     margin-top: 11px;
@@ -25,9 +29,9 @@ header {
 // --- Navigation ---
 
 nav ul {
-
   margin: 0;
   float: right;
+  padding-left: 0;
 }
 
 nav li {

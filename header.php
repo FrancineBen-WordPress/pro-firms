@@ -21,7 +21,7 @@
 
 
   <nav class="wrapper clearfix">
-  <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo-400x50.png" alt=""></a>
+  <div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo-400x50.png" alt=""></a></div>
     <?php wp_nav_menu(array(
       'container' => 'ul',
       'theme_location' => 'primary'
