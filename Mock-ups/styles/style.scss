@@ -148,6 +148,16 @@ div.single,
     max-width: 100%;
     margin-right: 10px;
   }
+  footer {
+    padding: 0;
+    background: #fff;
+    color: #8E8E8E;
+    margin-top: 30px;
+    font-size: $fontSize*0.4;
+    p {
+      margin: $fontSize*0.1 0;
+    }
+  }
   table {
     th {
       text-align: left;
@@ -198,20 +208,6 @@ div.single,
     img {
       margin: 0 auto
     }
-  }
-
-  div.articles,
-  div.single {
-    footer {
-    padding: 0;
-    background: #fff;
-    color: #8E8E8E;
-    margin-top: 30px;
-    font-size: $fontSize*0.4;
-    p {
-      margin: $fontSize*0.1 0;
-    }
-  }
   }
 
 // ---- Team Page ----
